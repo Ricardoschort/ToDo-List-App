@@ -29,14 +29,12 @@
 
 body{
     font-family: 'Josefin Sans', sans-serif;
+    background-color: var(--Very-Dark-Blue);
 }
 
 .container__main{
     display: grid;
     place-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--Very-Dark-Blue);
     position: relative;
 }
 .background__header{
@@ -101,6 +99,7 @@ body{
     border-radius: 50%;
     border: 1px solid var(--Dark-Grayish-Blue);
     position: relative;
+    background-color:var(--Very-Dark-Desaturated-Blue)
 
 }
 .todo__List-uncheck.active{
@@ -108,13 +107,14 @@ body{
     background: linear-gradient(0deg, rgba(34,193,195,0.8421568456484156) 0%, rgba(242,45,253,0.7105041845839899) 100%);
 }
 
-.check{
-    display: none;
-}
-.check.active{
+.todo__List-uncheck img{
     position: absolute;
     top: 5px;
     left: 5px;
+    display: none;
+}
+.todo__List-uncheck img.active{
+    display: block;
 }
 
 
